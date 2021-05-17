@@ -1,5 +1,5 @@
 {
-    "name": "bendev/lexoffice",
+    "name": "bendev/laravel-lexoffice-api",
     "description": "Laravel package for lexoffice.de Public API",
     "require": {
         "php": "^7.3|^8.0",
