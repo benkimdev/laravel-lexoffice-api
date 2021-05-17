@@ -107,11 +107,9 @@ class ApiException extends \Exception
     public static function createFromResponse(ResponseInterface $response, RequestInterface $request = null, $previous = null)
     {
         $object = static::parseResponseBody($response);
-
-        $issueList = $object->IssueList[0];
         
         return new self(
-            "Error executing API call - {$issueList->type} ({$issueList->i18nKey}: {$issueList->source})",
+            "Error executing API call",
             $response->getStatusCode(),
             null,
             $request,
