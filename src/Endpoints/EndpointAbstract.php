@@ -144,6 +144,8 @@ abstract class EndpointAbstract
         $apiPath = $this->getResourcePath() . $this->buildQueryString($filters);
 
         $result = $this->client->performHttpCall(self::REST_LIST, $apiPath);
+
+        $collection = [];
         
         foreach ($result->content as $dataResult) {
             $collection[] = ResourceFactory::createFromApiResult($dataResult, $this->getResourceObject());
