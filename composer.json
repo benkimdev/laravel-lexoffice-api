@@ -1,0 +1,34 @@
+{
+    "name": "bendev/lexoffice",
+    "description": "Laravel package for lexoffice.de Public API",
+    "require": {
+        "php": "^7.3|^8.0",
+        "guzzlehttp/guzzle": "^6.3 || ^7.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Benedict Humpert",
+            "email": "benedicthumpert@gmail.com"
+        }
+    ],
+    "keywords": [
+        "lexoffice",
+        "lexware",
+        "laravel",
+        "api",
+        "invoices"
+    ],
+    "autoload": {
+        "psr-4": {
+          "Bendev\\LexOffice\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bendev\\LexOffice\\LexOfficeServiceProvider"
+            ]
+        }
+    }
+}
